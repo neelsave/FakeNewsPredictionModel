@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block body %}
+
+<!-- Page Header -->
+<header
+  class="masthead"
+  style="background-image: url('{{url_for('static',filename='img/about-bg.jpg')}}')"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>About Us</h1>
+          <!--<h2><span class="subheading">Team Members</span></h2>-->
+          <h3 style="color: rgb(136, 2, 2)">Neel Save</h3>
+          <h3 style="color: rgb(136, 2, 2)">Omkar Thopate</h3>
+          <h3 style="color: rgb(136, 2, 2)">Vaibhav Waghe</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p>
+        We are Students at Sardar Patel Institute of Technology, Who always
+        likes to try new Technologies to solve challenging real world problems
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

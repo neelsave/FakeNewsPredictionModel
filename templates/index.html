@@ -1,0 +1,96 @@
+{% extends "layout.html" %} {% block body %}
+<!-- Page Header -->
+<header
+  class="masthead"
+  style="background-image: url('{{url_for('static',filename='img/home-bg.jpg')}}')"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Fake News Predictor</h1>
+          <span class="subheading" style="color: rgb(136, 2, 2)"><h2>Because Every News have Power to Influence</h2></span>
+          <p>
+          <p>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <h3 style="color: rgb(44, 43, 43)">Scroll Down To Start</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p>
+        <h1>Enter Your News Below</h1>
+      </p>
+      <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+      <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+      <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+      <!--utsav fake news-->
+
+<form id="form_pred" class="contact100-form validate-form" method="post" action="/index2">
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title">
+    </div>
+  </div>
+ 
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+    <label for="author"><b>Author</b></label>
+    <input type="text" placeholder="Enter Author" name="author">
+  </div>
+</div>
+ 
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">   
+    <label for="maintext"><b>Text</b></label>
+    <input type="text" placeholder="Enter Whole Text" name="maintext">
+  </div>
+</div>
+<br />
+  <div class="container">  
+    <button type="submit" class="btn btn-primary" id="sendMessageButton">
+      Check
+    </button>
+   </div>
+
+
+<br/>
+ 
+    <center>
+    <h1>Or</h1>
+    </center>
+    <br />
+
+<h1>You Can Paste your News link Below</h1>
+
+ <!--<form id="form_pred" class="contact100-form validate-form" method="post" action="/index2"></form> -->
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">   
+  <label for="link"><b>Text</b></label>
+  <input type="text" placeholder="Enter News Link" name="link" >
+  <br/>
+</div
+
+<div class="container">  
+  <br/>
+  <button type="submit" class="btn btn-primary" id="sendMessageButton">
+    Check
+  </button>
+ </div>
+</form>
+{% endblock %}

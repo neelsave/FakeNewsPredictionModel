@@ -1,0 +1,24 @@
+{% extends "layout.html" %} {% block body %}
+<br />
+<br />
+<center>
+  <h2 style="color: #b9ad00">Title</h2>
+  <h2>{{ query_title }}</h2>
+  <h2 style="color: #b9ad00">Author</h2>
+  <h2>{{ query_author }}</h2>
+  <h2 style="color: #b9ad00">Text</h2>
+  <h2>{{ query_text }}</h2>
+
+  <h1 style="color: rgb(30, 214, 6)">{{ prediction_text }}</h1>
+  <svg height="200" width="200">
+    <circle
+      cx="50"
+      cy="50"
+      r="40"
+      stroke="black"
+      stroke-width="0"
+      fill="green"
+    />
+  </svg>
+</center>
+{% endblock %}
